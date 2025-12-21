@@ -17,7 +17,6 @@ from loguru import logger
 from app.config import config
 from app.services.SDE.short_drama_explanation import analyze_subtitle, generate_narration_script
 # 导入新的LLM服务模块 - 确保提供商被注册
-import app.services.llm  # 这会触发提供商注册
 from app.services.llm.migration_adapter import SubtitleAnalyzerAdapter
 import re
 

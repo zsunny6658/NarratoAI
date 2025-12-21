@@ -543,7 +543,7 @@ def render_vision_llm_settings(tr):
     st.subheader(tr("Vision Model Settings"))
 
     # 固定使用 LiteLLM 提供商
-    config.app["vision_llm_provider"] = "litellm"
+    # config.app["vision_llm_provider"] = "litellm"
 
     # 获取已保存的 LiteLLM 配置
     full_vision_model_name = config.app.get("vision_litellm_model_name", "gemini/gemini-2.0-flash-lite")
@@ -815,7 +815,7 @@ def render_text_llm_settings(tr):
     st.subheader(tr("Text Generation Model Settings"))
 
     # 固定使用 LiteLLM 提供商
-    config.app["text_llm_provider"] = "litellm"
+    # config.app["text_llm_provider"] = "litellm"
 
     # 获取已保存的 LiteLLM 配置
     full_text_model_name = config.app.get("text_litellm_model_name", "deepseek/deepseek-chat")

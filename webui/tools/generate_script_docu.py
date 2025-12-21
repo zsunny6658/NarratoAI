@@ -234,6 +234,7 @@ def generate_script_docu(params):
                     if 'error' in result:
                         logger.warning(f"批次 {result['batch_index']} 处理出现警告: {result['error']}")
                         continue
+                    logger.info(f"响应数据: {result}")
                         
                     # 获取当前批次的文件列表
                     batch_files = get_batch_files(keyframe_files, result, vision_batch_size)

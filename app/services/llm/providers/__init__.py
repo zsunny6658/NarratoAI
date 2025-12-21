@@ -30,6 +30,8 @@ def register_all_providers():
     # LiteLLM 支持 100+ providers（OpenAI, Gemini, Qwen, DeepSeek, SiliconFlow, 等）
     LLMServiceManager.register_vision_provider('litellm', LiteLLMVisionProvider)
     LLMServiceManager.register_text_provider('litellm', LiteLLMTextProvider)
+    LLMServiceManager.register_vision_provider('siliconflow', LiteLLMVisionProvider)
+    LLMServiceManager.register_text_provider('siliconflow', LiteLLMTextProvider)
 
     logger.info("✅ LiteLLM 提供商注册完成（支持 100+ providers）")
 
